@@ -10,6 +10,7 @@ RUN apt-get -qq update && apt-get install -qqy --no-install-recommends \
 		libglib2.0-dev \
 		make \
 		patch \
+		dirmngr \
         && apt-get -y autoremove \
         && apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
